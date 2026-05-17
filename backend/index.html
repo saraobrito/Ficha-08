@@ -24,37 +24,100 @@
 <body>
 
 <!-- Navbar -->
-<header >
-    <div>
-    <!-- Logo e Nome -->
-        <a href="../backend/index.html">
-            <img src="../backend/includes/img/gym125_white.png" alt="Logo do ISEP Ginásio" height="50">
-        </a>
-        <h3>ISEP Ginásio</h3>
+<header class="container-fluid bg-dark text-white">
+    <div class="row align-items-center">
+        <div class="col-6 d-flex align-items-center p-3">
+            <!-- Logo e Nome -->
+            <a href="../backend/index.html">
+                <img alt="Logo do ISEP Ginásio" height="40" src="../backend/includes/img/gym125_white.png"class="me-3"/> 
+            </a>
+            <h3 class="mb-0">ISEP Ginásio</h3>
+        </div>
+
+       <div class="col-6 text-end p-3">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" 
+                    aria-expanded="false">
+                    <i class="fa-regular fa-user me-2"></i> Utilizador
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-key me-2"></i>Alterar password</a> 
+                    </li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="login_form.html"><i
+                                class="fa-solid fa-right-from-bracket me-2"></i>Sair</a></li>
+                </ul>
+            </div>
+        </div> 
+
     </div>
-    <div>
-        <button>Utilizador</button>
-    </div>
+
+    
 </header>
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- O sidebar e o conteúdo principal serão inseridos aqui -->
+         <aside class="col-md-3 col-lg-2 bg-secondary text-white p-3 min-vh-100">
+            <h4>Menu</h4>
+            <nav>
+                <a href="../backend/views/clientes/lista.html" class="nav-link text-white px-0 mb-2 d-block"> 
+                    <i class="fas fa-users me-2"></i> Clientes
+                </a>
+                <a href="../backend/views/agendamento/agendamento.html"class="nav-link text-white px-0 mb-2 d-block"> 
+                    <i class="fas fa-calendar-alt me-2"></i> Agendamento de treinos
+                </a>
+                <a href="../backend/views/planos/planos.html" class="nav-link text-white px-0 mb-2 d-block"> 
+                    <i class="fas fa-dumbbell me-2"></i> Planos de Treino
+                </a>
+                <a href="../backend/views/equipamentos/equipamentos.html" class="nav-link text-white px-0 mb-2 d-block"> 
+                    <i class="fas fa-cogs me-2"></i> Equipamentos
+                </a>
+                <a href="../backend/views/produtos-servicos/produtos_servicos.html" class="nav-link text-white px-0 mb-2 d-block"> 
+                    <i class="fas fa-box-open me-2"></i> Produtos e Serviços
+                </a>
+            </nav>
+        </aside>
+        
+        <main class="col-md-9 col-lg-10 p-4">
+            <section>
+                <h2>ISEP Ginásio</h2>
+                <p>Escolhe uma opção no menu lateral para continuar.</p>
+            </section>
+        </main>
+    </div>
+</div> 
+
 <!-- Sidebar -->
-<aside >
+<aside class="col-md-3 col-lg-2 bg-secondary text-white p-3 min-vh-100">
     <h4>Menu</h4>
     <nav>
-        <a href="../backend/views/clientes/lista.html"><i class="fas fa-users"></i> &ensp; Clientes</a> 
-        <a href="../backend/views/agendamento/agendamento.html"><i class="fas fa-calendar-alt"></i> &ensp;Agendamento de treinos</a> 
-        <a href="../backend/views/planos/planos.html"><i class="fas fa-dumbbell"></i> &ensp;Planos de Treino</a> 
-        <a href="../backend/views/equipamentos/equipamentos.html"><i class="fas fa-cogs"></i> &ensp;Equipamentos</a> 
-        <a href="../backend/views/produtos-servicos/produtos_servicos.html"><i class="fas fa-box-open"></i>&ensp;Produtos e Serviços</a> 
+        <a href="../backend/views/clientes/lista.html" class="nav-link text-white px-0 mb-2 d-block"> 
+            <i class="fas fa-users me-2"></i> Clientes
+        </a>
+        <a href="../backend/views/agendamento/agendamento.html"class="nav-link text-white px-0 mb-2 d-block"> 
+            <i class="fas fa-calendar-alt me-2"></i> Agendamento de treinos
+        </a>
+        <a href="../backend/views/planos/planos.html" class="nav-link text-white px-0 mb-2 d-block"> 
+            <i class="fas fa-dumbbell me-2"></i> Planos de Treino</a>
+        <a href="../backend/views/equipamentos/equipamentos.html" class="nav-link text-white px-0 mb-2 d-block"> 
+            <i class="fas fa-cogs me-2"></i> Equipamentos
+        </a>
+        <a href="../backend/views/produtos-servicos/produtos_servicos.html" class="nav-link text-white px-0 mb-2 d-block"> 
+            <i class="fas fa-box-open me-2"></i> Produtos e Serviços
+        </a>
     </nav>
-</aside>
+</aside> 
 
 <!-- Conteúdo Principal -->
-<main >
+<main class="col-md-9 col-lg-10 p-4">
     <section>
         <h2>ISEP Ginásio</h2>
         <p>Escolhe uma opção no menu lateral para continuar.</p>
     </section>
-</main> 
+</main>
 
 <!-- Bootstrap JS and custom JS -->
 <script src="../backend/includes/bootstrap/bootstrap.bundle.min.js"></script>
