@@ -1,3 +1,4 @@
+
 <?php include 'includes/header.php'; ?>
 
 <?php include 'includes/nav.php'; ?>
@@ -6,7 +7,7 @@
     <div class="row">
         <!-- O sidebar e o conteúdo principal serão inseridos aqui -->
         <?php include 'includes/sidebar.php'; ?>
-        
+
         <main class="col-md-9 col-lg-10 p-4">
             <section>
                 <h2>ISEP Ginásio</h2>

@@ -3,8 +3,8 @@
     <div class="row align-items-center">
         <div class="col-6 d-flex align-items-center p-3">
             <!-- Logo e Nome -->
-            <a href="../private/index.html">
-                <img alt="Logo do ISEP Ginásio" height="40" src="../private/includes/img/gym125_white.png"class="me-3"/> 
+            <a href="/Ficha 08/private/index.php">
+                <img alt="Logo do ISEP Ginásio" height="40" src="/Ficha 08/private/includes/img/gym125_white.png"class="me-3"/> 
             </a>
             <h3 class="mb-0"><?php echo APP_NAME; ?></h3>
         </div>
@@ -21,7 +21,7 @@
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="../login/login.html"><i
+                    <li><a class="dropdown-item" href="/Ficha 08/public/login.php"><i
                                 class="fa-solid fa-right-from-bracket me-2"></i>Sair</a></li>
                 </ul>
             </div>
